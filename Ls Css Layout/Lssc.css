@@ -1,0 +1,143 @@
+/* A Website  created by a fictional company called "LsCorp" */
+:root {
+    --primary-color: #e8491d;
+    --secondary-color: #f2f2f2;
+    --background-color: #f7f7f7;
+    --text-color: #333;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0;
+    background-color: var(--secondary-color);
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #35424a;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 60px;
+    border-bottom: 2px solid var(--primary-color);
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  
+  header li {
+    float: left;
+    list-style: none;
+    display: inline;
+    padding: 0 20px;
+  }
+  
+  header #brand {
+    float: left;
+  }
+  
+  header #branding h1 {
+    margin: 0;
+  }
+  
+  header nav {
+    float: right;
+    margin-top: 20px;
+  }
+  
+  header .highlight, header .current a {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+  }
+#showcase{
+    min-height: 400px;
+    background-image: url(../images/showcase.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+#showcase h1{
+    font-size: 36px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+#showcase p{
+    font-size: 20px;
+}
+#newsletter{
+    padding: 15px;
+    color:#ffffff;
+    background-color: #35424a;
+}
+#newsletter h1{
+    float: left;
+}
+#newsletter form{
+    float: right;
+    margin-top: 20px;
+}
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+#newsletter button[type="submit"]{
+    background-color: #e8491d;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    height: 36px;
+    width: 100px;
+    padding: 4px 10px;
+}
+#icon{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#icon .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+#icon .box img{
+    width: 90px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+@media  screen and (max-width: 600px) {
+    #brand, nav{
+        width: 100%;
+        padding-left: 60px;  
+    }
+}
+footer{
+    background-color: #e8491d;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+

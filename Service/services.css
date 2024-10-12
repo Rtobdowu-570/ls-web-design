@@ -1,0 +1,272 @@
+/* Define CSS variables */
+/* A Website  created by a fictional company called "LsCorp" */
+/* A Website  created by a fictional company called "LsCorp" */
+/* Global Styles */
+
+:root {
+    --primary-color: #e8491d;
+    --secondary-color: #f2f2f2;
+    --background-color: #f7f7f7;
+    --text-color: #333;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0;
+    background-color: var(--secondary-color);
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #35424a;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 60px;
+    border-bottom: 2px solid var(--primary-color);
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  
+  header li {
+    float: left;
+    list-style: none;
+    display: inline;
+    padding: 0 20px;
+  }
+  
+  header #brand {
+    float: left;
+  }
+  
+  header #branding h1 {
+    margin: 0;
+  }
+  
+  header nav {
+    float: right;
+    margin-top: 20px;
+  }
+  
+  header .highlight, header .current a {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+  }
+  
+  
+  /* Newsletter Styles */
+  
+  #newsletter{
+    padding: 15px;
+    color:#ffffff;
+    background-color: #35424a;
+}
+#newsletter h1{
+    float: left;
+    margin-bottom: 100px;
+}
+#newsletter form{
+    float: right;
+    margin-top: 20px;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 20px;
+    display: flex; /* Add this line to make the form elements inline */
+    align-items: center; /* Add this line to vertically center the elements */
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px; /* Reduce the width to make room for the button */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: -10px;
+}
+
+#newsletter button[type="submit"]{
+    background-color: #e8491d;
+    color: #fff;
+    border: none;
+    height: 36px;
+    padding: 4px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    
+}
+  
+  /* Content styles */
+  #content {
+    width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+  }
+  
+  .pg {
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  #services {
+    padding: 20px;
+    background-color: var(--background-color);
+    width: 80%;
+  }
+  
+  .pain {
+    padding: 5px;
+    list-style-type: disc;
+    text-align: start;
+  }
+  
+  .hed {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Table styles */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--text-color);
+  }
+
+.table table{
+    width: 90%;
+    border-collapse: collapse;
+    border: 1px solid  #aaa
+}
+  
+  .table th {
+    background-color: var(--secondary-color);
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #aaa;
+  }
+  
+  .table td {
+    padding: 10px;
+    border: 1px solid #aaa;
+  }
+  
+  .table tbody tr:nth-child(odd) {
+    background-color: lightgrey;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+
+.bl{
+    background-color: #35424a;
+    margin-top: 30px;
+    width: 80%;
+    border-radius: 10px;
+}
+.quote{
+    font-size: 18px;
+}
+.bl h3{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    color:#fff;
+}
+.bl label{
+    padding-left: 10px;
+    color: #fff;
+}
+.bl input[type="text"], .bl input[type="email"], .bl input[type="password"]{
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+}
+.bl textarea{
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.btn{
+    background-color: #e8491d;
+    border: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    margin-left: 30%;
+    width: 40%;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #e8491d;
+}
+  
+/* Responsive Behaviour */
+@media screen and (max-width: 600px) {
+    .table table {
+        width: 100%;
+        font-size: 14px; /* Adjust font size for small screens */
+    }
+}
+@media  screen and (max-width: 600px) {
+    #brand, nav{
+        width: 100%;
+        padding-left: 60px;  
+    }
+}
+@media screen and (max-width: 600px) {
+  .btn{
+    width: 50%;
+    margin-left: 20%;
+  }
+}
+  
+
+  footer{
+    background-color: #e8491d;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}

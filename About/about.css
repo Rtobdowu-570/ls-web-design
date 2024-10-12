@@ -1,0 +1,182 @@
+/* A Website  created by a fictional company called "LsCorp" */
+/* Global Styles */
+
+:root {
+  --primary-color: #e8491d;
+  --secondary-color: #f2f2f2;
+  --background-color: #f7f7f7;
+  --text-color: #333;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+  background-color: var(--secondary-color);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header styles */
+header {
+  background-color: #35424a;
+  color: #fff;
+  padding-top: 20px;
+  min-height: 60px;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  float: left;
+  list-style: none;
+  display: inline;
+  padding: 0 20px;
+}
+
+header #brand {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 20px;
+}
+
+header .highlight, header .current a {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #cccccc;
+  font-weight: bold;
+}
+
+
+/* Newsletter Styles */
+
+#newsletter {
+  background-color: #35424a;
+  color: #fff;
+  padding: 15px;
+}
+
+#newsletter h1 {
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 20px;
+}
+
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+#newsletter button[type="submit"] {
+  background-color: #e8491d;
+  color: #fff;
+  border: none;
+  height: 36px;
+  padding: 4px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 30%;
+  float: right;
+  margin-top: 10px;
+}
+
+/* Content Styles */
+
+#content {
+  width: 60%;
+  float: left;
+}
+
+/* Miscellaneous Styles */
+
+.mis {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #35424a;
+}
+
+.bl {
+  padding: 15px;
+  background-color: #35424a;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.bl p, ul, li {
+  color: #fff;
+  font-size: 15px;
+}
+@media  (max-width: 600px) {
+   #content, #sidebar {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+@media  screen and (max-width: 600px) {
+  #brand, nav{
+      width: 100%;
+      padding-left: 60px;  
+  }
+}
+
+
+/* Footer Styles */
+
+footer {
+  background-color: #e8491d;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  clear: both;
+  position: relative;
+}
+    
+
